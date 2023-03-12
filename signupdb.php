@@ -1,4 +1,5 @@
 <?php
+session_start();
 include('firebaseRDB.php');
 include('config.php');
 $username = $_POST['username'];
@@ -7,6 +8,7 @@ $password = $_POST['pass'];
 $rdb = new firebaseRDB($databaseURL);
 $retrieve = $rdb->retrieve("/user","username", "EQUAL", $username);
 $data = json_decode($retrieve, 1);
+//header("location: index.php");
 // echo '<pre>' ; 
 // print_r($retrieve) ;
 // echo '</pre>' ; 
@@ -31,6 +33,6 @@ if (isset($result['username'])) {
 
 
 
-}
+// }
 
 ?>
