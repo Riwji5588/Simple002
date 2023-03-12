@@ -79,11 +79,8 @@ if (!isset($_SESSION['username'])) {
           <nav class="main-nav">
             <!-- ***** Logo Start ***** -->
             <ul class="nav">
-
-
             </ul>
             <!-- ***** Logo End ***** -->
-
             <!-- ***** Menu Start ***** -->
             <ul class="nav">
               <li>
@@ -265,8 +262,6 @@ if (!isset($_SESSION['username'])) {
                       </div>
                     </div>
                   </div>
-                  
-
                 </div>
               </div>
             </div>
@@ -374,10 +369,7 @@ if (!isset($_SESSION['username'])) {
       });
       //Startready();
     });
-
-
     //Mark 
-
     $('#canvas').change(function () {
       $.ajax({
         type: "POST",
